@@ -1,0 +1,205 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 240 10% 3.9%;
+        --card: 0 0% 100%;
+        --card-foreground: 240 10% 3.9%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 240 10% 3.9%;
+        --primary: 240 5.9% 10%;
+        --primary-foreground: 0 0% 98%;
+        --secondary: 240 4.8% 95.9%;
+        --secondary-foreground: 240 5.9% 10%;
+        --muted: 240 4.8% 95.9%;
+        --muted-foreground: 240 3.8% 46.1%;
+        --accent: 240 4.8% 95.9%;
+        --accent-foreground: 240 5.9% 10%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 90%;
+        --input: 240 5.9% 90%;
+        --ring: 240 5.9% 10%;
+        --radius: 0.5rem;
+    }
+    .dark {
+        --background: 240 10% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 240 10% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 240 10% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 240 10% 3.9%;
+        --secondary: 240 5.9% 10%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 240 5.9% 10%;
+        --muted-foreground: 240 4.8% 95.9%;
+        --accent: 240 5.9% 10%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 84.2% 60.2%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 240 5.9% 15%;
+        --input: 240 5.9% 15%;
+        --ring: 0 0% 98%;
+        --radius: 0.5rem;
+    }
+}
+/* Accent color */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.indicator {
+    width: 8px;
+    height: 32px;
+    border-radius: 4px;
+}
+.indicator-accent {
+    background-color: #e0e0e0; /* Accent color */
+}
+.indicator-border-accent {
+    border: 2px solid #e0e0e0; /* Accent border color */
+    background-color: #ffffff;
+}
+.text-foreground {
+    color: #0f0f0f; /* Foreground text color */
+}
+.text-accent {
+    color: #e0e0e0; /* Accent text color */
+}
+/* Accent color */
+
+body {
+    padding: 0;
+}
+
+#line {
+    height: 2px;
+    width: 100%;
+    background: aqua;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#nopadding {
+    padding: 0;
+}
+
+#abbox-1 {
+    background-color: aqua;
+    margin-right: -10%;
+    padding-right: 30%;
+}
+
+#img-1 {
+    height: 256.667px;
+    width: 521.6px;
+}
+
+#div-i {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#div-ii {
+    padding: auto;
+    margin: 2%;
+}
+
+#title {
+    margin: 20px auto;
+}
+
+#div-iii {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+#box-1 {
+    margin-right: -10%;
+}
+
+#box-2 {
+
+    mainbox
+}
+
+#box-3 {
+    margin-right: -10%;
+    padding-right: 30%;
+}
+
+#box-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#box-5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#bg {
+    height: 200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#title-2 {
+text-align: left;
+margin-left: 10%;
+}
+
+#title-3 {
+margin: 30px;
+margin-right: 10%;
+text-align: right;
+}
+
+#contact {
+    margin: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+ 
+    #div-i {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #img-1 {
+        height: auto;
+        width: 100%;
+    }
+
+   #bars {
+    display: none;
+   }
+  
+   #box-3 {
+    padding: 0;
+    margin: 30px;
+   }
+  }
+  
