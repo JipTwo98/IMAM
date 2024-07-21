@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Institute for Muslim Affairs in Myanmar</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script src="scripts.js" defer></script>
+    </head>
+<body>
+    <div class="min-h-screen bg-background text-foreground">
+        <nav class="flex items-center justify-between p-4 border-b border-border" id="nav">
+            <div class="flex items-center space-x-2">
+                <img src="https://placehold.co/50x50" alt="Institute for Muslim Affairs in Myanmar Logo"
+                    class="h-10 w-10">
+                <span class="font-semibold text-lg">Institute for Muslim Affairs in Myanmar</span>
+            </div>
+            <div class="hidden md:flex space-x-4">
+                <a href="#" class="text-foreground hover:text-primary">Home</a>
+                <a href="#" class="text-foreground hover:text-primary">About</a>
+                <a href="#" class="text-foreground hover:text-primary">Activities</a>
+                <a href="#" class="text-foreground hover:text-primary">Blog</a>
+                <a href="#" class="text-foreground hover:text-primary">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-foreground hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Home</a>
+            <a href="#" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">About</a>
+            <a href="#" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Activities</a>
+            <a href="#" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Blog</a>
+            <a href="#" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Contact</a>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const lazyImages = document.querySelectorAll('img[data-src]');
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.getAttribute('data-src');
+              img.removeAttribute('data-src');
+              imageObserver.unobserve(img);
+            }
+          });
+        });
+      
+        lazyImages.forEach(image => {
+          imageObserver.observe(image);
+        });
+      
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      });
+      
+ </script>
+</html>
