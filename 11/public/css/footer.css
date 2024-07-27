@@ -1,0 +1,56 @@
+@layer base {
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 240 10% 23%;
+      --card: 0 0% 100%;
+      --border: 240 6% 89%;
+      --input: 240 6% 89%;
+      --primary: 220 40% 40%;
+      --primary-foreground: 210 40% 98%;
+      --secondary: 240 5.1% 46.1%;
+      --secondary-foreground: 0 0% 98%;
+      --muted: 240 4.8% 95.9%;
+      --muted-foreground: 240 3.8% 46.1%;
+    }
+  
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: hsl(var(--background));
+      color: hsl(var(--foreground));
+    }
+  }
+  
+  #footer {
+    width: 90%;
+    max-width: 70%;
+    margin: 0 auto;
+
+  }
+
+  #ftbody {
+    margin: 0 auto;
+  }
+  
+  @layer utilities {
+    .bg-muted {
+      background-color: hsl(var(--muted));
+    }
+  
+    .text-muted-foreground {
+      color: hsl(var(--muted-foreground));
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    #footer {
+      width: 100%;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Institute for Muslim Affairs in Myanmar</title>
+        <link rel="stylesheet" href="/css/nav.css">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+        <script src="scripts.js" defer></script>
+    </head>
+<body>
+    <div class="min-h-screen bg-background text-foreground" id="position">
+        <nav class="flex items-center justify-between p-4 border-b border-border" id="nav">
+            <div class="flex items-center space-x-2">
+                <a href="/index" class="text-foreground hover:text-primary">
+                    <img src="https://placehold.co/50x50" alt="Institute for Muslim Affairs in Myanmar Logo" class="h-10 w-10">
+                </a>
+                <a href="/index" class="text-foreground hover:text-primary">
+                    <span class="font-semibold text-lg">Institute for Muslim Affairs in Myanmar</span>
+                </a>
+            </div>
+            <div class="hidden md:flex space-x-4" id="nav-items">
+                <a href="/index" class="text-foreground hover:text-primary">Home</a>
+                <a href="/about" class="text-foreground hover:text-primary">About</a>
+                <a href="/activities" class="text-foreground hover:text-primary">Activities</a>
+                <a href="/blog" class="text-foreground hover:text-primary">Blog</a>
+                <a href="/about/#tocontact" class="text-foreground hover:text-primary">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-button" class="text-foreground hover:text-primary focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="/index" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Home</a>
+            <a href="/about" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">About</a>
+            <a href="/activities" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Activities</a>
+            <a href="/blog" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Blog</a>
+            <a href="/about/#tocontact" class="block px-4 py-2 text-foreground hover:bg-primary hover:text-primary-foreground">Contact</a>
+        </div>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+          mobileMenu.classList.toggle('open');
+        });
+    });
+</script>
+</html>
+
+    <main>
+        
+    <main class="flex flex-col items-center mt-8 px-4" id="header-pic">
+        <img src="/Media/headerpic.jpg" alt="People wearing t-shirts with IMAM letters" class="w-full max-w-4xl object-cover">
+        <div class="text-center mt-8" id="div-i">
+            <h1 class="text-2xl font-semibold text-primary" id="title-1">Institute for Muslim Affairs in Myanmar</h1>
+            <p class="mt-4 text-muted-foreground" id="desktop">
+                We are an independent and non-governmental scholarly think tank to promote the issues of
+                Muslim minority rights, highlighting minority participation in the political process of Myanmar
+                with unique strategies and initiatives. We will follow liberal democratic values and foster the
+                development of multiculturalism in the diverse communities of Burma.
+            </p>
+            <a href="/about" class="text-foreground hover:text-primary">
+                <button class="btn-1">Find out more</button>
+            </a>
+        </div>
+    </main>
+
+    <div class="bg-gradient-to-b from-teal-400 to-teal-300 p-8 text-white" id="bg">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold" id="title-2">Building Multicultural Society in Burma</h1>
+            <h1 class="text-3xl font-bold" id="title-3">Minority Matters</h1>
+        </div>
+    </div>
+
+    <div class="subpages">
+        <div class="bg-white bg-opacity-20 rounded-lg p-6 mt-8 mx-auto max-w-2xl" id="div-ii">
+            <h3 class="text-lg font-semibold text-white" id="title-4">Our Missions</h3>
+            <ul class="text-white mt-4 space-y-2" id="list-1">
+                <li>○ Building federal democratic Burma</li>
+                <li>○ Minority participation in the political arena of transitional and future Burma</li>
+                <li>○ Development of multiculturalism between diverse communities of Burma</li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+            <button class="bg-teal-500 text-white py-4 px-6 rounded-lg flex items-center justify-between">Research
+                <div class="arrow">
+                    <span class="ml-2"><img src="/Media/Arrowicon.png" alt=""></span>
+                </div>
+            </button>
+            <button class="bg-teal-500 text-white py-4 px-6 rounded-lg flex items-center justify-between">Training
+                <div class="arrow">
+                    <span class="ml-2"><img src="/Media/Arrowicon.png" alt=""></span>
+                </div>
+            </button>
+            <button class="bg-teal-500 text-white py-4 px-6 rounded-lg flex items-center justify-between">Advocacy
+                <div class="arrow">
+                    <span class="ml-2"><img src="/Media/Arrowicon.png" alt=""></span>
+                </div>
+            </button>
+            <button class="bg-teal-500 text-white py-4 px-6 rounded-lg flex items-center justify-between">Raising
+                Minorities’ Voice
+                <div class="arrow">
+                    <span class="ml-2"><img src="/Media/Arrowicon.png" alt=""></span>
+                </div>
+            </button>
+            <button class="bg-teal-500 text-white py-4 px-6 rounded-lg flex items-center justify-between">Humanitarian
+                Assistance
+                <div class="arrow">
+                    <span class="ml-2"><img src="/Media/Arrowicon.png" alt=""></span>
+                </div>
+            </button>
+        </div>
+
+        <div class="bg-background text-foreground p-8" id="subpages-2">
+            <h2 class="text-2xl font-bold mb-8 text-center">Recent Activity</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="blocks">
+                <div class="bg-card p-4 rounded-lg shadow">
+                    <img src="/Media/headerpic.jpg" alt="A hope for better future" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">The Spring: A hope for better future</h3>
+                    <p class="text-muted-foreground mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button class="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">Read More</button>
+                </div>
+                <div class="bg-card p-4 rounded-lg shadow">
+                    <img src="/Media/headerpic.jpg" alt="Research on ...." class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Research on ....</h3>
+                    <p class="text-muted-foreground mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button class="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">Read More</button>
+                </div>
+                <div class="bg-card p-4 rounded-lg shadow">
+                    <img src="/Media/headerpic.jpg" alt="Headline 1" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Headline 1</h3>
+                    <p class="text-muted-foreground mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button class="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">Read More</button>
+                </div>
+                <div class="bg-card p-4 rounded-lg shadow">
+                    <img src="/Media/headerpic.jpg" alt="Headline 2" class="rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Headline 2</h3>
+                    <p class="text-muted-foreground mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                    <button class="bg-primary text-primary-foreground hover:bg-primary/80 px-4 py-2 rounded">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </main>
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Institute for Muslim Affairs in Myanmar</title>
+        <link rel="stylesheet" href="/css/footer.css">
+        <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    </head>
+<body>
+    <footer class="bg-muted text-muted-foreground mt-16 p-8" id="footer">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left" id="ftbody">
+          <div>
+            <h4 class="font-semibold mb-2">Social Media</h4>
+            <p>Facebook</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Contact</h4>
+            <p>imam@gmail.com</p>
+            <p>Signal</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Activities</h4>
+            <p>Research</p>
+            <p>Training</p>
+            <p>Advocacy</p>
+            <p>Raising Minorities' Voice</p>
+            <p>Humanitarian Assistance</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-2">Resources</h4>
+            <p>Blog</p>
+            <p>About us</p>
+            <p>Contact us</p>
+          </div>
+        </div>
+        <p class="text-center mt-8">Copyright © 2024 IMAM. All rights reserved.</p>
+      </footer>
+</body>
+</html>
+
+</body>
+</html>
